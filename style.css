@@ -3,3 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: orange;
+    height: 100vh;
+}
+
+nav.list ul{
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+    margin-top: 20px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.img{
+    background-image: url("https://picsum.photos/id/684/600/400");
+    width: 50%;
+    height:50%;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    /* text-align: center; */
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        background-color:lightblue;
+        .img{background-image: url("https://picsum.photos/id/45/600/400");}
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    body{
+        background-color: lightsalmon;
+    }
+    nav ul{
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 20px;
+    }
+    .img{
+        background-image: url("https://picsum.photos/id/985/600/400");
+    }
+}
